@@ -1,7 +1,11 @@
 window.addEventListener("load" , () =>{
+
     const sounds = document.querySelectorAll(".sound"); 
+
     const pads = document.querySelectorAll(".pads div");
+
     const visual = document.querySelector('.visual');
+
     const color = [
         "violet" ,
         "tomato",
@@ -21,6 +25,7 @@ window.addEventListener("load" , () =>{
         });
     });
 
+
 const createBubbles =(index) =>{
     const bubbles = document.createElement("div");
     visual.appendChild(bubbles);
@@ -28,8 +33,15 @@ const createBubbles =(index) =>{
     bubbles.style.animation = 'jump 2s ease';
     bubbles.addEventListener('animationend' , function() {
         visual.removeChild(this);
+
+
     })
+
+
 }
+
+
+
 
 });
     
